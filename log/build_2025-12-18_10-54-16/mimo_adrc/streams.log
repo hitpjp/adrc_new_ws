@@ -1,0 +1,15 @@
+[0.010s] Invoking command in '/home/pjp2/adrc_new_ws/build/mimo_adrc': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pjp2/adrc_new_ws/build/mimo_adrc -- -j24 -l24
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target adrc_lib[0m
+[0.064s] [ 25%] [32mBuilding CXX object CMakeFiles/adrc_lib.dir/src/ADRC.cpp.o[0m
+[0.312s] [ 50%] [32m[1mLinking CXX static library libadrc_lib.a[0m
+[0.329s] [ 50%] Built target adrc_lib
+[0.336s] [35m[1mConsolidate compiler generated dependencies of target mimo_node[0m
+[0.345s] [ 75%] [32mBuilding CXX object CMakeFiles/mimo_node.dir/src/mimo_node.cpp.o[0m
+[1.722s] In file included from [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/mimo_node.cpp:2[m[K:
+[1.722s] [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/include/mimo_adrc/MimoADRC.h:21:10:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KMimoADRC::[m[K’ on member ‘[01m[KgetZ3[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.722s]    21 |     void [01;31m[KMimoADRC[m[K::getZ3(float z3[8]) {
+[1.722s]       |          [01;31m[K^~~~~~~~[m[K
+[2.256s] gmake[2]: *** [CMakeFiles/mimo_node.dir/build.make:76: CMakeFiles/mimo_node.dir/src/mimo_node.cpp.o] Error 1
+[2.257s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mimo_node.dir/all] Error 2
+[2.257s] gmake: *** [Makefile:146: all] Error 2
+[2.259s] Invoked command in '/home/pjp2/adrc_new_ws/build/mimo_adrc' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pjp2/adrc_new_ws/build/mimo_adrc -- -j24 -l24

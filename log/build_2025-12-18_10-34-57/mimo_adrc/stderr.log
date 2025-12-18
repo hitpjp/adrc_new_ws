@@ -1,0 +1,59 @@
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:3:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KADRC::ADRC()[m[K’
+    3 | [01;31m[KADRC[m[K::ADRC() {
+      | [01;31m[K^~~~[m[K
+In file included from [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:1[m[K:
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/include/mimo_adrc/ADRC.h:8:5:[m[K [01;36m[Knote: [m[K‘[01m[KADRC::ADRC()[m[K’ previously defined here
+    8 |     [01;36m[KADRC[m[K() { v1_=v2_=z1_=z2_=z3_=0.0f; }
+      |     [01;36m[K^~~~[m[K
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:7:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid ADRC::init(float, float, float)[m[K’
+    7 | void [01;31m[KADRC[m[K::init(float h, float r, float b0) {
+      |      [01;31m[K^~~~[m[K
+In file included from [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:1[m[K:
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/include/mimo_adrc/ADRC.h:9:10:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid ADRC::init(float, float, float)[m[K’ previously defined here
+    9 |     void [01;36m[Kinit[m[K(float h, float r, float b0) { h_=h; r_=r; b0_=b0; }
+      |          [01;36m[K^~~~[m[K
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:11:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid ADRC::setGains(float, float, float, float, float, float)[m[K’
+   11 | void [01;31m[KADRC[m[K::setGains(float b1, float b2, float b3, float k1, float k2, float c) {
+      |      [01;31m[K^~~~[m[K
+In file included from [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:1[m[K:
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/include/mimo_adrc/ADRC.h:10:10:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid ADRC::setGains(float, float, float, float, float, float)[m[K’ previously defined here
+   10 |     void [01;36m[KsetGains[m[K(float b1, float b2, float b3, float k1, float k2, float c) {
+      |          [01;36m[K^~~~~~~~[m[K
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:16:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kfloat ADRC::sgn(float)[m[K’
+   16 | float [01;31m[KADRC[m[K::sgn(float x) {
+      |       [01;31m[K^~~~[m[K
+In file included from [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:1[m[K:
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/include/mimo_adrc/ADRC.h:41:11:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat ADRC::sgn(float)[m[K’ previously defined here
+   41 |     float [01;36m[Ksgn[m[K(float x) { return (x > 0) ? 1.0f : ((x < 0) ? -1.0f : 0.0f); }
+      |           [01;36m[K^~~[m[K
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:20:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kfloat ADRC::fal(float, float, float)[m[K’
+   20 | float [01;31m[KADRC[m[K::fal(float e, float alpha, float delta) {
+      |       [01;31m[K^~~~[m[K
+In file included from [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:1[m[K:
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/include/mimo_adrc/ADRC.h:42:11:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat ADRC::fal(float, float, float)[m[K’ previously defined here
+   42 |     float [01;36m[Kfal[m[K(float e, float alpha, float delta) {
+      |           [01;36m[K^~~[m[K
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:25:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kfloat ADRC::fhan(float, float, float, float)[m[K’
+   25 | float [01;31m[KADRC[m[K::fhan(float x1, float x2, float r, float h) {
+      |       [01;31m[K^~~~[m[K
+In file included from [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:1[m[K:
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/include/mimo_adrc/ADRC.h:46:11:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat ADRC::fhan(float, float, float, float)[m[K’ previously defined here
+   46 |     float [01;36m[Kfhan[m[K(float x1, float x2, float r, float h) {
+      |           [01;36m[K^~~~[m[K
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:37:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid ADRC::observe(float, float)[m[K’
+   37 | void [01;31m[KADRC[m[K::observe(float y, float u_prev) {
+      |      [01;31m[K^~~~[m[K
+In file included from [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:1[m[K:
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/include/mimo_adrc/ADRC.h:15:10:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid ADRC::observe(float, float)[m[K’ previously defined here
+   15 |     void [01;36m[Kobserve[m[K(float y, float u_prev) {
+      |          [01;36m[K^~~~~~~[m[K
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:44:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kfloat ADRC::calculateU0(float)[m[K’
+   44 | float [01;31m[KADRC[m[K::calculateU0(float v0) {
+      |       [01;31m[K^~~~[m[K
+In file included from [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/ADRC.cpp:1[m[K:
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/include/mimo_adrc/ADRC.h:23:11:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat ADRC::calculateU0(float)[m[K’ previously defined here
+   23 |     float [01;36m[KcalculateU0[m[K(float v0) {
+      |           [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/adrc_lib.dir/build.make:76: CMakeFiles/adrc_lib.dir/src/ADRC.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/adrc_lib.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

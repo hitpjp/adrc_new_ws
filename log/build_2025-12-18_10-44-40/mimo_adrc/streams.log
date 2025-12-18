@@ -1,0 +1,17 @@
+[0.012s] Invoking command in '/home/pjp2/adrc_new_ws/build/mimo_adrc': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pjp2/adrc_new_ws/build/mimo_adrc -- -j24 -l24
+[0.060s] [35m[1mConsolidate compiler generated dependencies of target adrc_lib[0m
+[0.065s] [ 25%] [32mBuilding CXX object CMakeFiles/adrc_lib.dir/src/ADRC.cpp.o[0m
+[0.309s] [ 50%] [32m[1mLinking CXX static library libadrc_lib.a[0m
+[0.328s] [ 50%] Built target adrc_lib
+[0.342s] [ 75%] [32mBuilding CXX object CMakeFiles/mimo_node.dir/src/mimo_node.cpp.o[0m
+[1.721s] [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/mimo_node.cpp:[m[K In member function ‘[01m[Kvoid MimoNode::step()[m[K’:
+[1.721s] [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/mimo_node.cpp:82:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class MimoADRC[m[K’ {aka ‘[01m[Kclass MimoADRC[m[K’} has no member named ‘[01m[KgetZ3[m[K’
+[1.721s]    82 |         adrc_pos_->[01;31m[KgetZ3[m[K(z3_pos);
+[1.721s]       |                    [01;31m[K^~~~~[m[K
+[1.721s] [01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/mimo_node.cpp:96:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class MimoADRC[m[K’ {aka ‘[01m[Kclass MimoADRC[m[K’} has no member named ‘[01m[KgetZ3[m[K’
+[1.721s]    96 |         adrc_att_->[01;31m[KgetZ3[m[K(z3_att);
+[1.721s]       |                    [01;31m[K^~~~~[m[K
+[2.206s] gmake[2]: *** [CMakeFiles/mimo_node.dir/build.make:76: CMakeFiles/mimo_node.dir/src/mimo_node.cpp.o] Error 1
+[2.206s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mimo_node.dir/all] Error 2
+[2.206s] gmake: *** [Makefile:146: all] Error 2
+[2.207s] Invoked command in '/home/pjp2/adrc_new_ws/build/mimo_adrc' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pjp2/adrc_new_ws/build/mimo_adrc -- -j24 -l24

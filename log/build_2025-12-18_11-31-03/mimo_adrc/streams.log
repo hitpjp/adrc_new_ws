@@ -1,0 +1,28 @@
+[0.009s] Invoking command in '/home/pjp2/adrc_new_ws/build/mimo_adrc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pjp2/adrc_new_ws/build/mimo_adrc -- -j24 -l24
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target adrc_lib[0m
+[0.061s] [ 60%] Built target adrc_lib
+[0.074s] [ 80%] [32mBuilding CXX object CMakeFiles/mimo_node.dir/src/mimo_node.cpp.o[0m
+[2.665s] [100%] [32m[1mLinking CXX executable mimo_node[0m
+[2.908s] [100%] Built target mimo_node
+[2.914s] Invoked command in '/home/pjp2/adrc_new_ws/build/mimo_adrc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pjp2/adrc_new_ws/build/mimo_adrc -- -j24 -l24
+[2.920s] Invoking command in '/home/pjp2/adrc_new_ws/build/mimo_adrc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pjp2/adrc_new_ws/build/mimo_adrc
+[2.923s] -- Install configuration: ""
+[2.924s] -- Execute custom install script
+[2.924s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/lib/mimo_adrc/mimo_node
+[2.925s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/launch/mimo_launch.py
+[2.925s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/ament_index/resource_index/package_run_dependencies/mimo_adrc
+[2.925s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/ament_index/resource_index/parent_prefix_path/mimo_adrc
+[2.925s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/environment/ament_prefix_path.sh
+[2.925s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/environment/ament_prefix_path.dsv
+[2.926s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/environment/path.sh
+[2.926s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/environment/path.dsv
+[2.926s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/local_setup.bash
+[2.926s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/local_setup.sh
+[2.926s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/local_setup.zsh
+[2.926s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/local_setup.dsv
+[2.926s] -- Symlinking: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/package.dsv
+[2.930s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/ament_index/resource_index/packages/mimo_adrc
+[2.930s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/cmake/mimo_adrcConfig.cmake
+[2.930s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/cmake/mimo_adrcConfig-version.cmake
+[2.931s] -- Up-to-date symlink: /home/pjp2/adrc_new_ws/install/mimo_adrc/share/mimo_adrc/package.xml
+[2.932s] Invoked command in '/home/pjp2/adrc_new_ws/build/mimo_adrc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pjp2/adrc_new_ws/build/mimo_adrc

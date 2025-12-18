@@ -1,0 +1,10 @@
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/mimo_node.cpp:[m[K In member function ‘[01m[Kvoid MimoNode::step()[m[K’:
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/mimo_node.cpp:82:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class MimoADRC[m[K’ {aka ‘[01m[Kclass MimoADRC[m[K’} has no member named ‘[01m[KgetZ3[m[K’
+   82 |         adrc_pos_->[01;31m[KgetZ3[m[K(z3_pos);
+      |                    [01;31m[K^~~~~[m[K
+[01m[K/home/pjp2/adrc_new_ws/src/mimo_adrc/src/mimo_node.cpp:96:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class MimoADRC[m[K’ {aka ‘[01m[Kclass MimoADRC[m[K’} has no member named ‘[01m[KgetZ3[m[K’
+   96 |         adrc_att_->[01;31m[KgetZ3[m[K(z3_att);
+      |                    [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/mimo_node.dir/build.make:76: CMakeFiles/mimo_node.dir/src/mimo_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mimo_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

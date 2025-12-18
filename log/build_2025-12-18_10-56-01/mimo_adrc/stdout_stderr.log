@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target adrc_lib[0m
+[ 50%] Built target adrc_lib
+[35m[1mConsolidate compiler generated dependencies of target mimo_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/mimo_node.dir/src/mimo_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable mimo_node[0m
+/usr/bin/ld: CMakeFiles/mimo_node.dir/src/mimo_node.cpp.o: in function `MimoNode::MimoNode()':
+mimo_node.cpp:(.text._ZN8MimoNodeC2Ev[_ZN8MimoNodeC5Ev]+0x24b): undefined reference to `MimoADRC::init(float, float, float)'
+/usr/bin/ld: mimo_node.cpp:(.text._ZN8MimoNodeC2Ev[_ZN8MimoNodeC5Ev]+0x29d): undefined reference to `MimoADRC::setGains(float, float, float, float, float, float)'
+/usr/bin/ld: mimo_node.cpp:(.text._ZN8MimoNodeC2Ev[_ZN8MimoNodeC5Ev]+0x315): undefined reference to `MimoADRC::init(float, float, float)'
+/usr/bin/ld: mimo_node.cpp:(.text._ZN8MimoNodeC2Ev[_ZN8MimoNodeC5Ev]+0x367): undefined reference to `MimoADRC::setGains(float, float, float, float, float, float)'
+/usr/bin/ld: CMakeFiles/mimo_node.dir/src/mimo_node.cpp.o: in function `MimoNode::step()':
+mimo_node.cpp:(.text._ZN8MimoNode4stepEv[_ZN8MimoNode4stepEv]+0x667): undefined reference to `MimoADRC::observe(float*, float*)'
+/usr/bin/ld: mimo_node.cpp:(.text._ZN8MimoNode4stepEv[_ZN8MimoNode4stepEv]+0x698): undefined reference to `MimoADRC::calculateU0(float*, float*)'
+/usr/bin/ld: mimo_node.cpp:(.text._ZN8MimoNode4stepEv[_ZN8MimoNode4stepEv]+0x6c2): undefined reference to `MimoADRC::getZ3(float*)'
+/usr/bin/ld: mimo_node.cpp:(.text._ZN8MimoNode4stepEv[_ZN8MimoNode4stepEv]+0x851): undefined reference to `MimoADRC::observe(float*, float*)'
+/usr/bin/ld: mimo_node.cpp:(.text._ZN8MimoNode4stepEv[_ZN8MimoNode4stepEv]+0x882): undefined reference to `MimoADRC::calculateU0(float*, float*)'
+/usr/bin/ld: mimo_node.cpp:(.text._ZN8MimoNode4stepEv[_ZN8MimoNode4stepEv]+0x8a9): undefined reference to `MimoADRC::getZ3(float*)'
+/usr/bin/ld: mimo_node.cpp:(.text._ZN8MimoNode4stepEv[_ZN8MimoNode4stepEv]+0x958): undefined reference to `MimoADRC::getStates(int, float*)'
+/usr/bin/ld: CMakeFiles/mimo_node.dir/src/mimo_node.cpp.o: in function `void __gnu_cxx::new_allocator<MimoADRC>::construct<MimoADRC>(MimoADRC*)':
+mimo_node.cpp:(.text._ZN9__gnu_cxx13new_allocatorI8MimoADRCE9constructIS1_JEEEvPT_DpOT0_[_ZN9__gnu_cxx13new_allocatorI8MimoADRCE9constructIS1_JEEEvPT_DpOT0_]+0x31): undefined reference to `MimoADRC::MimoADRC()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/mimo_node.dir/build.make:160: mimo_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mimo_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
