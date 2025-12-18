@@ -1,0 +1,25 @@
+# mimo_adrc: 6-DOF 全向无人机 ADRC 仿真工作空间
+
+这是一个基于 ROS 2 的模块化自抗扰控制（ADRC）仿真项目。本项目实现了一个 6 自由度（6-DOF）全向无人机的解耦控制，能够独立控制位置（X, Y, Z）和姿态（Roll, Pitch, Yaw），并具备极强的抗外部干扰能力。
+
+## 项目特点
+* **模块化设计**：核心算法封装在 `adrc_lib` 静态库中，包含 `ADRC.cpp` 和 `MimoADRC.cpp`。
+* **6-DOF 解耦控制**：实现了位置（x, y, z）和姿态（roll, pitch, yaw）的完整独立控制逻辑。
+* **高频仿真**：仿真节点以 **500Hz (2ms)** 的采样频率运行。
+* **自动运行流程**：节点包含自动停止逻辑（30s 结束）和预设的等待时间（10s 开始运行）。
+* **实时干扰观测**：通过扩张状态观测器（ESO）实时观测并补偿 Y 轴推力干扰和 Pitch 轴力矩干扰。
+
+## 环境要求
+* ROS 2 (推荐 Humble 或 Foxy)
+* Ubuntu 22.04 或 20.04
+* C++ 14 及以上版本
+
+## 编译步骤
+在工作空间根目录（`adrc_new_ws`）下打开终端：
+
+```bash
+# 1. 编译项目
+colcon build --packages-select mimo_adrc
+
+# 2. 刷新环境变量
+source install/setup.bash
