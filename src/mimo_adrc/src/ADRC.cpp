@@ -34,10 +34,15 @@ float ADRC::fhan(float x1, float x2, float r, float h) {
     return -r * (a / d - sgn(a)) * sa - r * sgn(a);
 }
 
-void ADRC::observe(float y, float u_prev) {
+void ADRC::observe(float y, float u_prev, float f_known) {
     float e = z1_ - y;
     z1_ += h_ * (z2_ - beta1_ * e);
-    z2_ += h_ * (z3_ + b0_ * u_prev - beta2_ * fal(e, 0.50f, h_));
+    
+    // 修改点：在 z2_ 更新公式中加入 f_known
+    // 对于前4个通道，f_known 是已知的标量；
+    // 对于后6个通道，f_known 为 0，z3_ 将承担全部的“未知扰动”跟踪任务。
+    z2_ += h_ * (z3_ + b0_ * u_prev + f_known - beta2_ * fal(e, 0.50f, h_));
+    
     z3_ += h_ * (-beta3_ * fal(e, 0.25f, h_));
 }
 

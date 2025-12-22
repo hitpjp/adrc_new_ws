@@ -10,9 +10,11 @@ public:
     void init(float h, float r, float b0);
     void setGains(float beta1, float beta2, float beta3, float k1, float k2, float c);
     
-    void observe(float y, float u_prev);
+    // 修改：增加 f_known 参数，默认为 0
+    void observe(float y, float u_prev, float f_known = 0.0f);
     float calculateU0(float v0);
-
+    // 增加：专门获取扰动观测值的接口，语义更清晰
+    float getObservedDisturbance() const { return z3_; }
     // 观测值接口
     float getZ1() const { return z1_; }
     float getZ2() const { return z2_; }
